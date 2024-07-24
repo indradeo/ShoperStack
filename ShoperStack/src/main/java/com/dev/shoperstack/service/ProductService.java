@@ -23,7 +23,9 @@ public class ProductService {
 		structure.setData(saveProduct);
 		return new ResponseEntity<ResponseStructure<Product>>(structure, HttpStatus.CREATED);
 	}
-	
+
+	pubilc void findById(int id){
+	}
 	
 	
 }
