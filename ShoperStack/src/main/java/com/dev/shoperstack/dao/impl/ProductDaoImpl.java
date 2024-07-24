@@ -12,18 +12,19 @@ import com.dev.shoperstack.repository.ProductRepo;
 
 @Repository
 public class ProductDaoImpl implements ProductDao {
-	
+
 	@Autowired
 	private ProductRepo repo;
+
 	@Override
 	public Product saveProduct(Product product) {
-		
+
 		return repo.save(product);
 	}
 
 	@Override
 	public Optional<Product> findById(int productId) {
-		
+
 		return repo.findById(productId);
 	}
 
@@ -35,7 +36,7 @@ public class ProductDaoImpl implements ProductDao {
 	@Override
 	public void deleteProduct(int productId) {
 		repo.deleteById(productId);
-		
+
 	}
 
 }
