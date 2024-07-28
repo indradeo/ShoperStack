@@ -11,5 +11,6 @@ public interface ProductDao {
 	Optional<Product> findById(int productId);
 	List<Product> findAll();
 	void deleteProduct(int productId);
+	boolean isPresent(int id);
 
 }

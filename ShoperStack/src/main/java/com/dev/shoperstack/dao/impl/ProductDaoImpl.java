@@ -39,4 +39,9 @@ public class ProductDaoImpl implements ProductDao {
 
 	}
 
+	@Override
+	public boolean isPresent(int id) {
+		return repo.existsById(id);
+	}
+
 }
